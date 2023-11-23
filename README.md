@@ -30,7 +30,7 @@ Created a view (FareBinned) using the ntile window function to evenly distribute
 
 **3. Calculating Statistics:**
 
-Calculated statistics for each fare bin, including the total number of passengers, the number of passengers who survived, the average fare, the minimum fare, the maximum fare, and the survival rate, using aggregation functions.
+Calculated statistics for each fare bin, including the total number of passengers, the number of passengers who survived, the average fare, the minimum fare, the maximum fare, and the survival rate, using AGGREGATION functions.
 
 **4. Examination of Correlation:**
 
