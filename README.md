@@ -22,19 +22,19 @@ Perform an analysis of survival rates based on fare, utilizing the ntile window 
 ### Explanation
 **1. Handling Inconsistencies or Noise in Fare Column:**
 
-Created a temporary table (CleanedFares) to handle inconsistencies or noise in the fare column by setting negative values and missing values to NULL.
+Created a View (Fare) to handle inconsistencies or noise in the fare column by setting negative values and missing values to NULL.
 
 **2. Creating Fare Bins:**
 
-Created a view (FareBinnedView) using the ntile window function to evenly distribute passengers into 6 bins based on their cleaned fare values.
+Created a view (FareBinned) using the ntile window function to evenly distribute passengers into 6 bins based on their cleaned fare values.
 
 **3. Calculating Statistics:**
 
-Calculated statistics for each fare bin, including the total number of passengers, the number of passengers who survived, the average fare, the minimum fare, the maximum fare, and the survival rate.
+Calculated statistics for each fare bin, including the total number of passengers, the number of passengers who survived, the average fare, the minimum fare, the maximum fare, and the survival rate, using aggregation functions.
 
 **4. Examination of Correlation:**
 
-Examined if there is a correlation between fare amounts and survival by analyzing the statistics for each fare bin through the use of aggregation 
+Examined if there is a correlation between fare amounts and survival by analyzing the statistics for each fare bin.
 
 ## Question 2: Analysis of Survival Rates Based on Sex
 Objective
@@ -44,13 +44,11 @@ Conduct an analysis of survival rates based on sex. Calculate the percentage of 
 
 **1. Calculating Survival Rates by Sex:**
 
-Used a simple query to calculate survival rates based on sex, including the total number of passengers, the number of passengers who survived, and the survival rate.
+Used a simple query to calculate survival rates based on sex, including the total number of passengers, the number of passengers who survived, then I wrote a subquery to get the survival rate.
 
 **2. Highlighting Differences:**
 
 Highlighted any significant differences in survival ratios between genders by presenting the survival rates for males and females.
-
-**3. Subqueries:**
 
 ## Question 3: Relationship Between Survival and Age
 
@@ -61,7 +59,7 @@ Explore the relationship between survival and age. Calculate the survival rate f
 ### Explanation
 **1. Categorizing Passengers into Age Groups:**
 
-Created a temporary table (AgeGroups) to categorize passengers into different age groups using a CASE statement.
+Created a view (AgeGroupSurvival) to categorize passengers into different age groups using a CASE statement.
 
 **2. Calculating Survival Rates by Age Group:**
 
@@ -69,6 +67,6 @@ Calculated the survival rate for each age group, including the total number of p
 
 **3. Insights and Trends:**
 
-Provided insights into how age correlates with the likelihood of survival by examining survival rates for different age groups. Looked for notable patterns or trends in survival based on age.
+Provided insights into how age correlates with the likelihood of survival by examining survival rates for different age groups. Looked for notable patterns or trends in survival based on age. I realized children less than 18 had the highest rate of survival with approximately 54 percent survival rate, followed by adult between age 30 to 80 with survival rate of approximately 41 percent.
 
 The goal was to conduct a comprehensive analysis of the Titanic dataset and extract meaningful insights related to survival rates based on various factors. The Sql queries to the questions above can be found [Here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/titanic%20datasets%20query.sql)
