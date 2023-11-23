@@ -5,11 +5,11 @@ This project involves analyzing the Titanic dataset using advance SQL queries to
 ## Dataset
 The Titanic dataset consists of the following key columns:
 
-PassengerId: Unique identifier for each passenger.
-Survived: Binary indicator (0 or 1) representing survival status (0 = Not Survived, 1 = Survived).
-Fare: Fare paid by the passenger.
-Sex: Gender of the passenger.
-Age: Age of the passenger.
+- PassengerId: Unique identifier for each passenger.
+- Survived: Binary indicator (0 or 1) representing survival status (0 = Not Survived, 1 = Survived).
+- Fare: Fare paid by the passenger.
+- Sex: Gender of the passenger.
+- Age: Age of the passenger.
 
 I utilized three dataset [Train](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/train.csv), [Gender_submissions](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/gender_submission.csv) and [Test](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/test.csv)
 
