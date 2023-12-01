@@ -70,3 +70,27 @@ Calculated the survival rate for each age group, including the total number of p
 Provided insights into how age correlates with the likelihood of survival by examining survival rates for different age groups. Looked for notable patterns or trends in survival based on age. I realized children less than 18 had the highest rate of survival with approximately 54 percent survival rate, followed by adult between age 30 to 80 with survival rate of approximately 41 percent.
 
 The goal was to conduct a comprehensive analysis of the Titanic dataset and extract meaningful insights related to survival rates based on various factors. The Sql queries to the questions above can be found [Here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/titanic%20datasets%20query.sql)
+
+## DAY 19 AND 20
+## Question 1: Understanding Titles and Survival Rates
+**Objective**
+
+Explore the relationship between passenger titles and their survival rates.
+**A)**  Identify Unique Titles in the Dataset
+
+**Explanation:**
+
+- The SQL query extracts titles from the 'Name' column using Case statement.It Returns only the titles specified 
+**B)** Consolidate Infrequent Titles into Broader Categories
+
+**Explanation:**
+
+- A new column (Extracted_Titles) was created to store the consolidated title
+- The CASE statement is used to group infrequent titles into broader categories ('Mr.', 'Mrs.', 'Miss.', 'Master.') and label others as 'Other'.
+
+**C)** Calculate and Analyze Survival Rates for Each Title Grouping
+
+**Explanation:**
+
+- Calculated the total number of passengers by Using _COUNT_, the number of passengers who survived Using _SUM_, and the survival rate for each title grouping by the new column (Extracted_title).
+- The results are grouped by the consolidated title, and the output is ordered in descending order of survival rates.
