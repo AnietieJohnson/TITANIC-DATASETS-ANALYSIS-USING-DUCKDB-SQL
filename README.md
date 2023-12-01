@@ -76,11 +76,13 @@ The goal was to conduct a comprehensive analysis of the Titanic dataset and extr
 **Objective**
 
 Explore the relationship between passenger titles and their survival rates.
+
 **A)**  Identify Unique Titles in the Dataset
 
 **Explanation:**
 
 - The SQL query extracts titles from the 'Name' column using Case statement.It Returns only the titles specified 
+
 **B)** Consolidate Infrequent Titles into Broader Categories
 
 **Explanation:**
