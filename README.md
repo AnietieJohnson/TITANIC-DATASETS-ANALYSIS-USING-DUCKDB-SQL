@@ -123,7 +123,7 @@ SQL query to DAY 19 AND 20 can be found here
 These SQL queries help to systematically analyze the relationship between passenger titles and survival rates, as well as the survival rates based on being a woman or a child. The steps involve data extraction, consolidation, and statistical analysis to provide meaningful insights.
 
 ## Insights and Trends
-- The calculated survival rates reveal variations in the likelihood of survival based on different titles
+- The calculated survival rates reveal variations in the likelihood of survival based on different titles;
   For example, The titles like 'Mrs.' , 'Ms.' and 'Miss.' have a higher survival rates due to potential priority during evacuation.
 - The category 'Women' and 'Children' includes individuals who may have been prioritized during evacuation based on vulnerability
 - The analysis sheds light on the effectiveness of evacuation protocols during emergencies, especially concerning the prioritization of certain groups for survival.
