@@ -120,6 +120,7 @@ The CASE statement is used to create a binary feature flag based on the conditio
 - The results are grouped by Age_Gender_category, and the output is ordered in descending order of survival rates.
 
 SQL query to DAY 19 AND 20 can be found here
+
 These SQL queries help to systematically analyze the relationship between passenger titles and survival rates, as well as the survival rates based on being a woman or a child. The steps involve data extraction, consolidation, and statistical analysis to provide meaningful insights.
 
 ## Insights and Trends
