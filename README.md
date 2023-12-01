@@ -97,7 +97,7 @@ Explore the relationship between passenger titles and their survival rates.
 - Calculated the total number of passengers by using _COUNT_, the number of passengers who survived using _SUM_, and the survival rate for each title grouping by the new column (Extracted_title).
 - The results are grouped by the consolidated title, and the output is ordered in descending order of survival rates.
 
-## Question 2: Calculate the Survival Based on Being a Woman or a Child
+## Question 2: Calculate the Survival Based on Being a Woman, a Childor an Adult Male
 **Objective**
 
 Evaluate the insights gained from a binary feature flagging passengers as women/children or adult men.
