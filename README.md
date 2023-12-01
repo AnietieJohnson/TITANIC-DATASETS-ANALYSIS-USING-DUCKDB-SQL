@@ -94,5 +94,37 @@ Explore the relationship between passenger titles and their survival rates.
 
 **Explanation:**
 
-- Calculated the total number of passengers by Using _COUNT_, the number of passengers who survived Using _SUM_, and the survival rate for each title grouping by the new column (Extracted_title).
+- Calculated the total number of passengers by using _COUNT_, the number of passengers who survived using _SUM_, and the survival rate for each title grouping by the new column (Extracted_title).
 - The results are grouped by the consolidated title, and the output is ordered in descending order of survival rates.
+
+## Question 2: Calculate the Survival Based on Being a Woman or a Child
+**Objective**
+
+Evaluate the insights gained from a binary feature flagging passengers as women/children or adult men.
+
+**A)** Create a Feature Flag for Women/Children and Adult Men
+
+**Explanation**
+
+The CASE statement is used to create a binary feature flag based on the conditions:
+
+- female and age less than 18 is categorized as 'Children'
+- female and age greater thanor equal to 18 is categorized as 'Women',
+- male and age less than 18 is categorized as 'Children' and others as 'Adult Men'. This column was named Age_Gender_category
+  
+**B)** Calculate and Analyze Survival Rates for Each Category
+
+**Explanation**
+
+- Calculated the total number of passengers using _COUNT_, the number of passengers who survived using _SUM_, and the survival rate for each category (Women/Children or Adult Men).
+- The results are grouped by Age_Gender_category, and the output is ordered in descending order of survival rates.
+
+SQL query to DAY 19 AND 20 can be found here
+These SQL queries help to systematically analyze the relationship between passenger titles and survival rates, as well as the survival rates based on being a woman or a child. The steps involve data extraction, consolidation, and statistical analysis to provide meaningful insights.
+
+## Insights and Trends
+- The calculated survival rates reveal variations in the likelihood of survival based on different titles
+  For example, The titles like 'Mrs.' , 'Ms.' and 'Miss.' have a higher survival rates due to potential priority during evacuation.
+- The category 'Women' and 'Children' includes individuals who may have been prioritized during evacuation based on vulnerability
+- The analysis sheds light on the effectiveness of evacuation protocols during emergencies, especially concerning the prioritization of certain groups for survival.
+These insights contribute to a deeper understanding of how demographic factors such as titles, age, and gender correlate with survival rates in the context of the Titanic dataset. They can be valuable for drawing conclusions about the decision-making processes and priorities during the disaster.
