@@ -119,7 +119,7 @@ The CASE statement is used to create a binary feature flag based on the conditio
 - Calculated the total number of passengers using _COUNT_, the number of passengers who survived using _SUM_, and the survival rate for each category (Women/Children or Adult Men).
 - The results are grouped by Age_Gender_category, and the output is ordered in descending order of survival rates.
 
-SQL query to DAY 19 AND 20 can be found here
+SQL query to DAY 19 AND 20 can be found [here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/day%2019%20and%2020.sql)
 
 These SQL queries help to systematically analyze the relationship between passenger titles and survival rates, as well as the survival rates based on being a woman or a child. The steps involve data extraction, consolidation, and statistical analysis to provide meaningful insights.
 
