@@ -144,7 +144,7 @@ Write an SQL query to display the number of passengers, their survival rate, and
 
 **Objective**
 
-- Categorize passengers into solo travelers, those traveling with a family, and those in a mixed group. Consider the assumption based on ticket number and surname extracted from the original Name feature.
+Using SQL, categorize passengers into solo travelers, those traveling with a family, and those in a mixed group. The assumption for this task is based on the ticket number and surname extracted from the original Name feature.
 - The query categorizes passengers into solo travelers, family travelers, and mixed groups based on the assumption that families may have other members on different tickets.
 - It uses the CASE statement and window functions to make these categorizations.
 
