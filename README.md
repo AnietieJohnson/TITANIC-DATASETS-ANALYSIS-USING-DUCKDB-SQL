@@ -129,3 +129,34 @@ These SQL queries help to systematically analyze the relationship between passen
 - The category 'Women' and 'Children' includes individuals who may have been prioritized during evacuation based on vulnerability
 - The analysis sheds light on the effectiveness of evacuation protocols during emergencies, especially concerning the prioritization of certain groups for survival.
 These insights contribute to a deeper understanding of how demographic factors such as titles, age, and gender correlate with survival rates in the context of the Titanic dataset. They can be valuable for drawing conclusions about the decision-making processes and priorities during the disaster.
+
+
+# Day 21-23
+## Task 1: Survival Based on Cabin Level
+
+**Objective**
+
+Write an SQL query to display the number of passengers, their survival rate, and the cabin level they belong to. Consider the assumption that the same ticket number defines passengers traveling together.
+- The query calculates survival rates based on the assumption that passengers with the same ticket number traveled together.
+- It counts the total passengers, the number of passengers who survived, and calculates the survival rate for each unique ticket.
+  
+# Task 2: Solo Travelers, Family Travelers, and Mix Group
+
+**Objective**
+
+- Categorize passengers into solo travelers, those traveling with a family, and those in a mixed group. Consider the assumption based on ticket number and surname extracted from the original Name feature.
+- The query categorizes passengers into solo travelers, family travelers, and mixed groups based on the assumption that families may have other members on different tickets.
+- It uses the CASE statement and window functions to make these categorizations.
+
+# Task 3: Family Size Calculation  
+
+**Objective**
+
+Write an SQL query to determine the family size for each passenger. The assumption for family size calculation is to add SibSp, Parch, and the current passenger (+1). However, this is determined at the maximum family size based on ticket number and surname.
+- The query calculates family sizes for each passenger based on the assumption that families traveled together on the same ticket.
+- It uses a Common Table Expression (CTE) named FamilySizeMapping to determine the maximum family size for each unique ticket and surname combination.
+- The final result provides the ticket, surname, and family size for each passenger.
+
+## Insights
+- Cabin Level and Survival: Passengers with cabins may have had different access or proximity to lifeboats, influencing their chances of survival.
+- Understanding Family Dynamics: The results offer insights into the family dynamics aboard the Titanic, indicating the potential sizes of families traveling together.
