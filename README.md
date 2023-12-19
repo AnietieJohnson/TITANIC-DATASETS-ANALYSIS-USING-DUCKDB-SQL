@@ -69,7 +69,7 @@ Calculated the survival rate for each age group, including the total number of p
 
 Provided insights into how age correlates with the likelihood of survival by examining survival rates for different age groups. Looked for notable patterns or trends in survival based on age. I realized children less than 18 had the highest rate of survival with approximately 54 percent survival rate, followed by adult between age 30 to 80 with survival rate of approximately 41 percent.
 
-The goal was to conduct a comprehensive analysis of the Titanic dataset and extract meaningful insights related to survival rates based on various factors. The Sql queries to the questions above can be found [Here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/titanic%20datasets%20query.sql)
+The goal was to conduct a comprehensive analysis of the Titanic dataset and extract meaningful insights related to survival rates based on various factors. **_The Sql queries to the questions above can be found_** [Here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/titanic%20datasets%20query.sql)
 
 ## DAY 19 AND 20
 ## Question 1: Understanding Titles and Survival Rates
@@ -119,7 +119,7 @@ The CASE statement is used to create a binary feature flag based on the conditio
 - Calculated the total number of passengers using _COUNT_, the number of passengers who survived using _SUM_, and the survival rate for each category (Women/Children or Adult Men).
 - The results are grouped by Age_Gender_category, and the output is ordered in descending order of survival rates.
 
-SQL query to DAY 19 AND 20 can be found [here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/day%2019%20and%2020.sql)
+**_SQL query to DAY 19 AND 20 can be found_** [here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/day%2019%20and%2020.sql)
 
 These SQL queries help to systematically analyze the relationship between passenger titles and survival rates, as well as the survival rates based on being a woman or a child. The steps involve data extraction, consolidation, and statistical analysis to provide meaningful insights.
 
@@ -129,3 +129,34 @@ These SQL queries help to systematically analyze the relationship between passen
 - The category 'Women' and 'Children' includes individuals who may have been prioritized during evacuation based on vulnerability
 - The analysis sheds light on the effectiveness of evacuation protocols during emergencies, especially concerning the prioritization of certain groups for survival.
 These insights contribute to a deeper understanding of how demographic factors such as titles, age, and gender correlate with survival rates in the context of the Titanic dataset. They can be valuable for drawing conclusions about the decision-making processes and priorities during the disaster.
+
+
+# Day 21-23
+## Task 1: Survival Based on Cabin Level
+
+**Objective**
+
+Write an SQL query to display the number of passengers, their survival rate, and the cabin level they belong to. Consider the assumption that the same ticket number defines passengers traveling together.
+- The query calculates survival rates based on the assumption that passengers with the same ticket number traveled together.
+- It counts the total passengers, the number of passengers who survived, and calculates the survival rate for each unique ticket.
+  
+# Task 2: Solo Travelers, Family Travelers, and Mix Group
+
+**Objective**
+
+Using SQL, categorize passengers into solo travelers, those traveling with a family, and those in a mixed group. The assumption for this task is based on the ticket number and surname extracted from the original Name feature.
+- The query categorizes passengers into solo travelers, family travelers, and mixed groups based on the assumption that families may have other members on different tickets.
+- It uses the CASE statement and window functions to make these categorizations.
+
+# Task 3: Family Size Calculation  
+
+**Objective**
+
+Write an SQL query to determine the family size for each passenger. The assumption for family size calculation is to add SibSp, Parch, and the current passenger (+1). However, this is determined at the maximum family size based on ticket number and surname.
+- The query calculates family sizes for each passenger based on the assumption that families traveled together on the same ticket.
+- It uses a Common Table Expression (CTE) named FamilySizeMapping to determine the maximum family size for each unique ticket and surname combination.
+- The final result provides the ticket, surname, and family size for each passenger.
+**_SQL query to DAY 21-23 can be found_** [here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/DAY%2021-23.sql)
+## Insights
+- Cabin Level and Survival: Passengers with cabins may have had different access or proximity to lifeboats, influencing their chances of survival.
+- Understanding Family Dynamics: The results offer insights into the family dynamics aboard the Titanic, indicating the potential sizes of families traveling together.
