@@ -160,3 +160,48 @@ Write an SQL query to determine the family size for each passenger. The assumpti
 ## Insights
 - Cabin Level and Survival: Passengers with cabins may have had different access or proximity to lifeboats, influencing their chances of survival.
 - Understanding Family Dynamics: The results offer insights into the family dynamics aboard the Titanic, indicating the potential sizes of families traveling together.
+# DAY 24-26
+## Question 1: Survival Rate of Males in the Third Passenger Class
+
+**Objective:**
+
+To determine the survival rate of males in the third passenger class, specifically considering women and children as potential survivors. The analysis aims to explore if the provided percentage aligns with the historical notion that women and children were prioritized during the evacuation.
+
+**Explanation:**
+
+- Data Classification:
+The dataset is first classified based on age and gender categories, distinguishing between children and adults, as well as between males and females.
+- Common Table Expression (CTE):
+A Common Table Expression named Malesurvivors is created to store the categorized data for further analysis.
+- Survival Rate Calculation:
+The final query calculates the survival rate for males in the third passenger class, considering only women and children for survival.
+
+## Question 2: Percentage Survived Between Sex, Embarked, and PClass
+
+**Objective:**
+
+To analyze the percentage of survivors based on the combination of Sex, Embarked, and PClass, providing insights into how these factors correlate with survival rates.
+
+**Explanation:**
+- Data Aggregation:
+The dataset is grouped based on Sex, Embarked, and PClass to aggregate information for analysis.
+
+## Question 3: Chances of Survival Advice
+
+**Objective:**
+
+To provide survival rate advice based on specific passenger attributes (male, age 36, second class, embarked from Cherbourg).
+
+**Explanation:**
+
+- Survival Rate Calculation:
+The query calculates the survival rate for passengers with specific attributes: male, age 36, second class, and embarked from Cherbourg.
+
+In the provided data (Sex: Male, Age: 36, Pclass: 2, Embarked: C), the passenger is male, relatively young, traveling in the second class, and boarded from Cherbourg. Generally, women and children were prioritized during the evacuation, and passengers in higher classes had better survival rates.
+
+**Given the provided information:**
+
+- Being male might lower the chances of survival compared to females.
+- Age 36 is relatively young and might slightly improve the chances compared to older passengers.
+- Traveling in the second class might offer a better chance of survival compared to the third class.
+- Embarking from Cherbourg (C) doesn't provide significant information about survival. 
