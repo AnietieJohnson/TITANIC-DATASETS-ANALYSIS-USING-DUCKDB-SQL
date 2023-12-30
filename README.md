@@ -219,7 +219,7 @@ I used Powerbi to Visualize all SQl query and solution
 
 - Using new column I applied the percentile function to create fare bins for survival rate analysis.
 - I also calculated the survival rate
-- Using scatter plot I analyzed and visualized the correlation between fare amounts and survival.
+- Using scatter plot I analyzed and visualized the correlation between fare amounts and survival rate.
 - I used a Table to visualize survival based on Fare
 
 **Survival Based on Sex Analysis:**
