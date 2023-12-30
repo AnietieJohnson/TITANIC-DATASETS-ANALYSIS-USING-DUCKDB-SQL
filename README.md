@@ -250,3 +250,6 @@ I used Powerbi to Visualize all SQl query and solution. The Comprehesive dashboa
 **Additional Challenges:**
 - Provided an insight on the chances of survival for a specific passenger profile (Sex: Male, Age: 36, Pclass: 2, Embarked: C).
 - Created slicers on Family size,Age and Embarked.
+
+## CONCLUSION
+The #30DaysDuckDB Challenge has come to an end, marking a journey of exploration, learning, and creative problem-solving in the realm of data analytics and visualization. I embarked on a 30-day adventure, each day presenting a new set of challenges that tested my skills in data manipulation, analysis, and visualization using DuckDB. As the #30DaysDuckdbChallenge concludes, I leave with a sense of accomplishment, newfound skills, and a strengthened passion for data analytics. The journey doesn't end here; it serves as a steppingstone for continuous learning and growth in the ever-evolving landscape of data science and analytics. It indeed took dedication, creativity, and resilience to complete the challenge.
