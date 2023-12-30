@@ -209,7 +209,7 @@ In the provided data (Sex: Male, Age: 36, Pclass: 2, Embarked: C), the passenger
 # DAY 27-30
 **Objective**
 
-The objective of the challenge was to create a comprehensive dashboard using either Power BI or FusionCharts based on the analysis questions and findings related to the Titanic dataset. The challenge covered various aspects of survival analysis, including fare, sex, age, titles, family size, cabin level, and additional specific queries.
+The objective of this task was to create a comprehensive dashboard using either Power BI or FusionCharts based on the analysis questions and findings related to the Titanic dataset. The challenge covered various aspects of survival analysis, including fare, sex, age, titles, family size, cabin level, and additional specific queries.
 
 **Explanation**
 
