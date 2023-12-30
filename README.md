@@ -213,7 +213,7 @@ The objective of this task was to create a comprehensive dashboard using either 
 
 **Explanation**
 
-I used Powerbi to Visualize all SQl query and solution
+I used Powerbi to Visualize all SQl query and solution. The Comprehesive dashboard can be viewed [here](https://github.com/AnietieJohnson/TITANIC-DATASETS-ANALYSIS-USING-DUCKDB-SQL/blob/main/Final%20challenge%20with%20duckdb%2C%20POWERBI%20PDF%20FILE.pdf)
 
 **Survival Based on Fare Analysis:**
 
