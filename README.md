@@ -205,3 +205,51 @@ In the provided data (Sex: Male, Age: 36, Pclass: 2, Embarked: C), the passenger
 - Age 36 is relatively young and might slightly improve the chances compared to older passengers.
 - Traveling in the second class might offer a better chance of survival compared to the third class.
 - Embarking from Cherbourg (C) doesn't provide significant information about survival. 
+# DAY 27-30
+### Objective
+The objective of the challenge was to create a comprehensive dashboard using either Power BI or FusionCharts based on the analysis questions and findings related to the Titanic dataset. The challenge covered various aspects of survival analysis, including fare, sex, age, titles, family size, cabin level, and additional specific queries.
+### Explanation
+
+I used Powerbi to Visualize all SQl query and solution
+
+**Survival Based on Fare Analysis:**
+
+- Using new column I applied the percentile function to create fare bins for survival rate analysis.
+- I also calculated the survival rate
+- Using scatter plot I analyzed and visualized the correlation between fare amounts and survival.
+- I used a Table to visualize survival based on Fare
+
+**Survival Based on Sex Analysis:**
+
+- Built a column chart visual to highlight survival rates for males and females.
+- Clearly presented the survival rate of passengers, emphasizing gender distinctions.
+
+**Survival Based on Age Analysis:**
+
+- Used column chart visual to give a break down of survival rates for different age groups.
+- Provided insights into how age correlates with the likelihood of survival.
+- Identified and visualized notable patterns or trends in survival based on age.
+
+**Understanding Titles and Survival Rates:**
+
+Implemented visuals to display survival rates for different passenger titles.
+Highlighted trends or patterns related to titles and survival.
+Survival Based on Being a Woman or a Child:
+
+**Developed visuals illustrating survival rates based on the binary feature flagging passengers as women/children or adult men.
+Survival Based on Cabin Level:**
+
+Designed a visual representation of the number of passengers, their survival rate, and the cabin level they belong to.
+Considered the assumption that the same ticket number defines passengers traveling together.
+- I created a comprehensive DashBoard to explain my findings and Insight
+
+Family Size Calculation:
+
+Developed visuals demonstrating family size calculations based on SibSp, ParCh, and the current passenger.
+Used a mapping SQL subquery to match family size with the same ticket number and surname.
+Additional Challenges:
+
+Displayed the survival rate of males in the third passenger class.
+Created visuals showcasing the survival rates based on Sex, Embarked, and PClass.
+Provided a visual representation advising the chances of survival for a specific passenger profile (Sex: Male, Age: 36, Pclass: 2, Embarked: C).
+- 
